@@ -1,5 +1,18 @@
 /*** You will not need this file until Unit 3 ***/
 
+.dark-mode {
+
+}
+
+.dark-mode h1 {
+
+}
+.dark-mode a:visited * {
+
+}
+#theme-button{
+    
+}
 header{
     display: flex;
     align-items: center;
