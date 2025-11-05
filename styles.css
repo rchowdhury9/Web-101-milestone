@@ -1,99 +1,168 @@
-/*** You will not need this file until Unit 3 ***/
-
-.dark-mode {
-
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.light-mode {
+  background: #f6f6f6;
+  color: #111;
 }
 
-.dark-mode h1 {
-
+p {
+  font-size: 20px;
+  color: inherit;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
-.dark-mode a:visited * {
-
+body.dark-mode p {
+  background-color: grey;
 }
+
+.dark-mode a, .dark-mode a:visited {
+  color: #ff7e7e;
+}
+
 #theme-button{
-    
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  color: #1C2222;
+  cursor: pointer;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 8px 16px;
-    background-color: #1C2222;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+body.light-mode #theme-button { 
+    background: #1C2222; 
+    color: #fff; 
 }
-
-header ul.main{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 12px;
-    margin: 0;
-    padding: 0;
+#theme-button:hover{ 
+    opacity: 0.9; 
 }
 
-header ul.main li a{
-    color: #f50000;
-    padding: 6px 14px;
-    text-decoration: none;
-    font-size: 1.1em;
+header{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    gap:16px; 
+    padding:8px 16px; 
+    background-color:#1C2222; 
+    position:sticky; 
+    top:0; 
+    z-index:100; }
+header ul.main{ 
+    list-style:none; 
+    display:flex; 
+    flex-direction:row; 
+    justify-content:center; 
+    gap:12px; 
+    margin:0; 
+    padding:0; }
+header ul.main li a{ 
+    color:#f50000; 
+    padding:6px 14px; 
+    text-decoration:none; 
+    font-size:1.1em; 
 }
-header ul.main li a:hover{
-    text-decoration: underline;
+header ul.main li a:hover{ 
+    text-decoration:underline; 
+}
+#main-header-img{ 
+    height:60px; 
+    width:120px; 
+}
+#header-img{ 
+    margin-left:auto; 
+    margin-right:auto; 
+    object-fit:cover; 
+    display:block; 
+}
+#background{ 
+    background-color: 
+    darkred; 
+}
+h1{ 
+    color:#fff; 
+    text-align:center; 
+    margin:16px 0; 
+}
+h2{ 
+    color:#ffd2d2; 
+    margin-top:24px; 
+}
+button{ 
+    padding:10px 16px; 
+    border:none; 
+    border-radius:6px; 
+    background:#ffffff; 
+    color:#1C2222; 
+    cursor:pointer; 
+    margin-right:8px; 
+}
+button:hover{ 
+    opacity:0.9; 
+}
+@media (max-width:640px){ header{ flex-wrap:wrap; justify-content:center; } }
+
+
+.rsvp-section { 
+    margin-top: 32px; }
+.rsvp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .rsvp-grid { grid-template-columns: 1fr; }
+}
+.rsvp-description {
+  margin-bottom: 12px;
 }
 
-#main-header-img{
-    height: 60px;
-    width: 120px;
+#rsvp-form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
 }
-#header-img{
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    display: block;
+#rsvp-form input,
+#rsvp-form select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #111;
 }
-#background{
-    background-color: darkred;
-}
-
-p{
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-h1{
-    color: #fff;
-    text-align: center;
-    margin: 16px 0;
+body.dark-mode #rsvp-form input,
+body.dark-mode #rsvp-form select {
+  background: #1e1e1e;
+  color: #eee;
+  border-color: #444;
 }
 
-h2{
-    color: #ffd2d2;
-    margin-top: 24px;
+#rsvp-form .invalid {
+  border-color: #e30000 !important;
+  background: rgba(227,0,0,0.08) !important;
+}
+#rsvp-form .error-text {
+  font-size: 0.875rem;
+  color: #e30000;
+  min-height: 1em;
 }
 
-button{
-    padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
-    background: #ffffff;
-    color: #1C2222;
-    cursor: pointer;
-    margin-right: 8px;
-}
-button:hover{
-    opacity: 0.9;
+
+#rsvp-list { 
+    list-style: none; 
+    padding-left: 0; 
+    margin: 0; 
 }
 
-@media (max-width: 640px) {
-    header{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+#rsvp-list li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: rgba(255,255,255,0.9);
+  color: inherit;
+}
+body.dark-mode #rsvp-list li {
+  background: rgba(255,255,255,0.08);
 }
