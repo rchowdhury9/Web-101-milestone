@@ -29,7 +29,13 @@
         <button type="button">Merchandise</button>
         <button type="button">Linktree</button>
 
-        <iframe width="900" height="515" src="https://www.youtube.com/embed/DIQHYxQCJIs" title="First training sesh at 23 years old...." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    <iframe width="900" height="515"
+        src="https://www.youtube.com/embed/DIQHYxQCJIs"
+        title="First training sesh at 23 years old...."
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
         
         <h2 id="about">About the Event</h2>
         <p>WELCOME TO THE BEAF OF THE CENTURY!!!! Where everyone gets to cause all kinds of chaos here and 
@@ -76,51 +82,54 @@
         <h3>Weighted Pull Up Max Out Competition</h3>
         <p>Time to test your bodyweight's capabilities and pull some serious weight to build a strong demonic back!!!!!</p>
 
-<section id="rsvp" class="rsvp-selection">
-    <div class="rsvp-grid">
-        <div class="rsvp-left">
-            <h2>RSVP</h2>
-            <p class="rsvp-description">
-                Lockin in your spot! Tell us who you are and how many you are brininging along.
-                We'll keep this list updated so everyone can see who's in.
-            </p>
-            
-            <form id="rsvp-form" novalidate>
-                <div class="form-row">
-                    <label for="rsvp-name">Name</label>
-                    <input type="text" id="rsvp-name" name="rsvp-name" placeholder="e.g., Jordan Smith" required />
-                    <small class ="error-message" aria-live="polite"></small>
-                </div>
-                <div class="form-row">
-                    <label for="rsvp-email">Email</label>
-                    <input id="rsvp-email" name="email" placeholder="person@email.com" required />
-                    <small class ="error-message" aria-live="polite"></small>
-                </div>
-                <div class="form-row">
-                    <label for="rsvp-guest">Number of Guests(including you)</label>
-                    <input id="rsvp-email" name="guests" type="number" min="1" max="10" value="1" required />
-                    <small class ="error-message" aria-live="polite"></small>
-                </div>
-                <div class="form-row">
-                    <label for = "rsvp-lift">Favortie</label>
-                    <select id="rsvp-lift" name="lift" required>
-                        <option value="" disabled selected>Select your favorite lift</option>
-                        <option value="deadlift">Deadlift</option>
-                        <option value="bench-press">Bench Press</option>
-                        <option value="weighted-pullup">Weighted Pull Up</option>
-                    </select>
-                    <small class ="error-message" aria-live="polite"></small>
-                </div>
-                <button id="submit" type="submit">Submit RSVP</button>
+<section id="rsvp" class="rsvp-section">
+  <div class="rsvp-grid">
+    <div class="rsvp-left">
+      <h2>RSVP</h2>
+      <p class="rsvp-description">
+        Lock in your spot! Tell us who you are and how many you’re bringing along.
+        We’ll keep this list updated so everyone can see who’s in.
+      </p>
 
-            </form>
+      <form id="rsvp-form" novalidate>
+        <div class="form-row">
+          <label for="rsvp-name">Name</label>
+          <input type="text" id="rsvp-name" name="name" placeholder="e.g., Jordan Smith" required />
+          <small class="error-text" aria-live="polite"></small>
         </div>
-        <div class="rsvp-right">
-            <h2>Attendees</h2>
-            <ul id="rsvp-list" aria-live="polite" aria-relevant="additions">
-                
-            </ul>
+
+        <div class="form-row">
+          <label for="rsvp-email">Email</label>
+          <input type="email" id="rsvp-email" name="email" placeholder="person@email.com" required />
+          <small class="error-text" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="rsvp-guests">Number of Guests (including you)</label>
+          <input id="rsvp-guests" name="guests" type="number" min="1" max="10" value="1" required />
+          <small class="error-text" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="rsvp-lift">Favorite Lift</label>
+          <select id="rsvp-lift" name="lift" required>
+            <option value="" disabled selected>Select your favorite lift</option>
+            <option value="deadlift">Deadlift</option>
+            <option value="bench-press">Bench Press</option>
+            <option value="weighted-pullup">Weighted Pull Up</option>
+          </select>
+          <small class="error-text" aria-live="polite"></small>
+        </div>
+
+        <button id="rsvp-submit" type="submit">Submit RSVP</button>
+      </form>
     </div>
+
+    <div class="rsvp-right">
+      <h2>Attendees</h2>
+      <ul id="rsvp-list" aria-live="polite" aria-relevant="additions"></ul>
+    </div>
+  </div>
 </section>
         <h2 id="links">Links</h2>
 
