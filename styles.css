@@ -1,7 +1,9 @@
+/* THEME STYLES */
 body.dark-mode {
   background: #121212;
   color: #eee;
 }
+
 body.light-mode {
   background: #f6f6f6;
   color: #111;
@@ -14,106 +16,136 @@ p {
   padding: 10px;
   border-radius: 5px;
 }
+
 body.dark-mode p {
   background-color: grey;
 }
 
-.dark-mode a, .dark-mode a:visited {
+.dark-mode a,
+.dark-mode a:visited {
   color: #ff7e7e;
 }
 
-#theme-button{
+/* THEME BUTTON */
+#theme-button {
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid transparent;
   background: #ffffff;
-  color: #1C2222;
+  color: #1c2222;
   cursor: pointer;
 }
-body.light-mode #theme-button { 
-    background: #1C2222; 
-    color: #fff; 
-}
-#theme-button:hover{ 
-    opacity: 0.9; 
+
+body.light-mode #theme-button {
+  background: #1c2222;
+  color: #fff;
 }
 
-header{ 
-    display:flex; 
-    align-items:center; 
-    justify-content:space-between; 
-    gap:16px; 
-    padding:8px 16px; 
-    background-color:#1C2222; 
-    position:sticky; 
-    top:0; 
-    z-index:100; }
-header ul.main{ 
-    list-style:none; 
-    display:flex; 
-    flex-direction:row; 
-    justify-content:center; 
-    gap:12px; 
-    margin:0; 
-    padding:0; }
-header ul.main li a{ 
-    color:#f50000; 
-    padding:6px 14px; 
-    text-decoration:none; 
-    font-size:1.1em; 
+#theme-button:hover {
+  opacity: 0.9;
 }
-header ul.main li a:hover{ 
-    text-decoration:underline; 
-}
-#main-header-img{ 
-    height:60px; 
-    width:120px; 
-}
-#header-img{ 
-    margin-left:auto; 
-    margin-right:auto; 
-    object-fit:cover; 
-    display:block; 
-}
-#background{ 
-    background-color: 
-    darkred; 
-}
-h1{ 
-    color:#fff; 
-    text-align:center; 
-    margin:16px 0; 
-}
-h2{ 
-    color:#ffd2d2; 
-    margin-top:24px; 
-}
-button{ 
-    padding:10px 16px; 
-    border:none; 
-    border-radius:6px; 
-    background:#ffffff; 
-    color:#1C2222; 
-    cursor:pointer; 
-    margin-right:8px; 
-}
-button:hover{ 
-    opacity:0.9; 
-}
-@media (max-width:640px){ header{ flex-wrap:wrap; justify-content:center; } }
 
+/* HEADER + NAV */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 16px;
+  background-color: #1c2222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-.rsvp-section { 
-    margin-top: 32px; }
+header ul.main {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+header ul.main li a {
+  color: #f50000;
+  padding: 6px 14px;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+header ul.main li a:hover {
+  text-decoration: underline;
+}
+
+#main-header-img {
+  height: 60px;
+  width: 120px;
+}
+
+#header-img {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  display: block;
+}
+
+#background {
+  background-color: darkred;
+}
+
+/* HEADINGS + BUTTONS */
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 16px 0;
+}
+
+h2 {
+  color: #ffd2d2;
+  margin-top: 24px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1c2222;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* RSVP STYLES */
+.rsvp-section {
+  margin-top: 32px;
+}
+
 .rsvp-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
   align-items: start;
 }
+
 @media (max-width: 800px) {
-  .rsvp-grid { grid-template-columns: 1fr; }
+  .rsvp-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 .rsvp-description {
   margin-bottom: 12px;
 }
@@ -124,6 +156,7 @@ button:hover{
   gap: 6px;
   margin-bottom: 12px;
 }
+
 #rsvp-form input,
 #rsvp-form select {
   padding: 10px 12px;
@@ -132,6 +165,7 @@ button:hover{
   background: #fff;
   color: #111;
 }
+
 body.dark-mode #rsvp-form input,
 body.dark-mode #rsvp-form select {
   background: #1e1e1e;
@@ -141,28 +175,103 @@ body.dark-mode #rsvp-form select {
 
 #rsvp-form .invalid {
   border-color: #e30000 !important;
-  background: rgba(227,0,0,0.08) !important;
+  background: rgba(227, 0, 0, 0.08) !important;
 }
+
 #rsvp-form .error-text {
   font-size: 0.875rem;
   color: #e30000;
   min-height: 1em;
 }
 
-
-#rsvp-list { 
-    list-style: none; 
-    padding-left: 0; 
-    margin: 0; 
+#rsvp-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 #rsvp-list li {
   padding: 8px 12px;
   border-radius: 6px;
   margin-bottom: 8px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   color: inherit;
 }
+
 body.dark-mode #rsvp-list li {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* SCROLL-IN ANIMATION FOR SECTIONS */
+.anim-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.anim-section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MODAL + OVERLAY */
+.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); /* darkens rest of screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background: #1c2222;
+  color: #ffffff;
+  padding: 24px 28px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Match modal with light mode */
+body.light-mode .modal {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Modal image animation */
+.modal-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  animation: modal-pop 0.6s ease-out forwards;
+}
+
+@keyframes modal-pop {
+  0% {
+    transform: scale(0.6) rotate(-5deg);
+  }
+  70% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
 }
